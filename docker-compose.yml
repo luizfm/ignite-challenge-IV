@@ -1,0 +1,10 @@
+services:
+  unit_tests:
+    image: postgres
+    container_name: unit_tests
+    ports:
+      - 5435:5432
+    environment:
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=fin_api
